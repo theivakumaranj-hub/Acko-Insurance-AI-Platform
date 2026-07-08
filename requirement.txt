@@ -1,0 +1,9 @@
+streamlit
+pandas
+numpy
+scikit-learn
+joblib
+chromadb
+google-generativeai
+sqlalchemy
+psycopg2-binary
