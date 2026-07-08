@@ -2,7 +2,7 @@
 
 An end-to-end, digital-first InsurTech prototype combining conversational AI orchestration and predictive machine learning models.This platform replaces traditional insurance friction points with sub-second automated processing systems built over scalable database infrastructure.
 ---
-Dashboard.PNG
+Dashboard.png
 
 ## 🚀 Key Architectural Modules
 
