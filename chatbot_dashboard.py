@@ -6,7 +6,6 @@ import os
 import chromadb
 from sqlalchemy import create_engine
 import google.generativeai as genai
-from PIL import Image  # Handles computer vision asset matrix conversions
 
 # --- FORCE EXPLICIT INITIALIZATION DEFENSES ---
 st.set_page_config(page_title="Acko AI Hub", layout="wide")
@@ -175,7 +174,7 @@ if app_mode == "💬 Module 1: Policy Chatbot":
             pass
 
 # -------------------------------------------------------------------------
-# MODULE 2: INSURANCE PREMIUM QUOTE PREDICTOR (DUAL-STREAM AUDIT EDITION)
+# MODULE 2: INSURANCE PREMIUM QUOTE PREDICTOR
 # -------------------------------------------------------------------------
 elif app_mode == "📊 Module 2: Premium Quote Predictor":
     st.header("Instant Insurance Premium Calculator")
@@ -220,7 +219,7 @@ elif app_mode == "📊 Module 2: Premium Quote Predictor":
                 premium_out = models["premium"].predict(payload)[0]
                 st.success(f"### 🎉 Calculated Annual Insurance Premium Rate: ₹{round(premium_out, 2)}")
 
-                # Save directly into the live session memory array to guarantee instant UI rendering
+                # Saved directly into the live session memory array to guarantee instant UI rendering
                 session_entry = {
                     "Vehicle Type": v_type,
                     "Manufacturer/Make": make,
